@@ -1,0 +1,5 @@
+{
+  "in": "styles/styles.css",
+  "out": "styles/styles.min.css",
+  "browsers": ["last 3 versions"]
+}

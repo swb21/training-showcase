@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="styles/styles.min.css">
+
+    <title>Учебная витрина</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+            defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body class="body">
+<header class="header">
+    <a class="logo header__logo" href="/"></a>
+</header>
+
+<main class="page-content">
+    <h1 class="page-title page-content__page-title">Витрина</h1>
+
+    <form class="filter-form" name="filter-form">
+        <select class="filter-form__item form-control filter-form__form-control" name="subject">
+            <option value="all">Все предметы</option>
+        </select>
+
+        <select class="filter-form__item form-control filter-form__form-control" name="genre">
+            <option value="all">Все жанры</option>
+        </select>
+
+        <select class="filter-form__item form-control filter-form__form-control" name="grade">
+            <option value="all">Все классы</option>
+        </select>
+
+        <div class="filter-form__item control-group">
+            <input type="text" class="filter-form__search form-control filter-form__form-control" name="search" placeholder="Поиск">
+            <button class="form-control filter-form__form-control" type="submit">Найти</button>
+        </div>
+    </form>
+
+    <div class="courses">
+        <span class="message courses__message hidden">Курсов по заданным критериям не найдено</span>
+    </div>
+</main>
+
+<footer class="footer">
+    <a class="logo footer__logo" href="/"></a>
+</footer>
+</body>
+</html>
